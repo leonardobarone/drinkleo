@@ -16,7 +16,7 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-        <Route path={`${basename}/about`} element={<AboutScreen />} />
+        <Route path='/about' element={<AboutScreen />} />
         <Route path="/contattaci" element={<ContactScreen />} />
         <Route path="/cocktail/:id" element={<SingleCocktailScreen />} />
         <Route path="*" element={<ErrorScreen />} />
