@@ -9,13 +9,14 @@ import ErrorScreen from "./screen/ErrorScreen";
 
 function App() {
   // const prova = useGlobalContext();
+  const basename = 'https://drink-leo.netlify.app/';
   return (
     <Router className="App">
       <Navbar />
       <Sidebar />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-        <Route path="/about" element={<AboutScreen />} />
+        <Route path={`${basename}/about`} element={<AboutScreen />} />
         <Route path="/contattaci" element={<ContactScreen />} />
         <Route path="/cocktail/:id" element={<SingleCocktailScreen />} />
         <Route path="*" element={<ErrorScreen />} />
