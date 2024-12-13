@@ -9,7 +9,7 @@ import ErrorScreen from "./screen/ErrorScreen";
 
 function App() {
   // const prova = useGlobalContext();
-  const basename = 'https://drink-leo.netlify.app/';
+  // const basename = 'https://drink-leo.netlify.app/';
   return (
     <Router className="App">
       <Navbar />
